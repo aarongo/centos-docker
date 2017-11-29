@@ -13,12 +13,12 @@ LABEL license=GPLv2
 # ADD jdk1.7.0_79 /software/jdk7
 ADD apache-tomcat-7.0.82 /software/tomcat7
 
-ARG WAE_NAME
+#ARG WAE_NAME
 
 RUN rm -rf /software/tomcat7/webapps/*
 
-ADD ${WAE_NAME:-helloword.war} /software/tomcat7/webapps/
-
+# ADD ${WAE_NAME:-helloword.war} /software/tomcat7/webapps/
+ADD helloword.war /software/tomcat7/webapps/
 
 
 ENV JAVA_HOME=/software/jdk7
