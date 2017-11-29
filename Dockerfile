@@ -18,7 +18,7 @@ ADD apache-tomcat-7.0.82 /software/tomcat7
 RUN rm -rf /software/tomcat7/webapps/*
 
 # ADD ${WAE_NAME:-helloword.war} /software/tomcat7/webapps/
-ADD ./helloword.war /software/tomcat7/webapps/
+ADD ./helloworld.war /software/tomcat7/webapps/
 
 
 ENV JAVA_HOME=/software/jdk7
