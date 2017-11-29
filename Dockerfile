@@ -2,7 +2,7 @@
 # No Java
 # FROM centos7:7.2.1511
 # Java is Exist
-FROM centos7/java:1.7.0_79
+FROM registry.cn-hangzhou.aliyuncs.com/edward_liu/registry:1.7.0_79
 
 MAINTAINER edwardliu
 
